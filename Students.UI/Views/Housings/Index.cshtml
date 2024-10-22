@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Students.UI.Models.DTO.HousingDto>
+@{
+}
+
+<h1>Housing</h1>
+<div class ="d-flex justify-content-end" >
+    <a class="btn btn-secondary" asp-controller="Housings" asp-action="Add">Add Housings? </a>
+
+</div>
+
+<table class= "table table-bordered">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Price</th>
+        <th> </th>
+    </thead>
+    <tbody>
+        @foreach (var house in Model)
+        {
+            <tr>
+                <th>@house.Id</th>
+                <th>@house.Name</th>
+                <th>@house.Location</th>
+                <th>@house.Price</th>
+                <th>
+                    <a asp-controller="Housings" asp-action="Edit" asp-route-id="@house.Id"> Edit</a>
+                </th>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

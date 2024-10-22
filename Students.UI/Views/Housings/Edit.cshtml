@@ -1,0 +1,24 @@
+﻿@model Students.UI.Models.DTO.HousingDto
+
+
+<h1>Edit Page</h1>
+
+@if (Model is not null)
+{
+    <form method = "post" class="mt-3">
+    <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter the Name of housing where you live" asp-for="Name" />
+        <label> Address</label>
+        <input type="text" placeholder="Enter the house address" asp-for="Location"/>
+        <label>Price</label>
+        <input type="number" placeholder="enter the price" asp-for="Price" />
+
+        <button type="submit" class="btn btn-primary"> Edit</button>
+
+        <button type="submit" class="btn btn-danger" asp-controller="Housings" asp-action="Delete"> Delete</button>
+    </div>
+
+</form>
+}
+

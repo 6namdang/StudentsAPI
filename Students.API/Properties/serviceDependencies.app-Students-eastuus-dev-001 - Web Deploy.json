@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/app-Students-eastuus-dev-001/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsStudentsAuthConnectionS_5F0A8DC38B",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sqlserver-students-eastus-dev-001/databases/sqldb-students-eastus-dev-001",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:StudentsAuthConnectionString",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/app-Students-eastuus-dev-001/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsStudentsConnectionStrin_9FCCB3053D",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sqlserver-students-eastus-dev-001/databases/sqldb-students-eastus-dev-001",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:StudentsConnectionString",
+      "dynamicId": null
+    }
+  }
+}
