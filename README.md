@@ -1,1 +1,1 @@
-Gannon Students API created in ASP .NET core 8
+Develop a RESTful API from scratch using Domain Driven Development 
